@@ -1,0 +1,25 @@
+{
+  "video_path": "data/people_in_out.mp4",
+  "output_path": "data/runs/billing_staff_2counters.avi",
+  "model_path": "yolov8s.pt",
+  "confidence": 0.3,
+  "iou": 0.5,
+  "classes": [0],
+  "frame_size": [1280, 720],
+  "read_fps": 5,
+  "roi_color_customer": [0, 255, 0],
+  "roi_color_staff": [0, 0, 255],
+  "roi_color_text": [255, 255, 255],
+  "counters": [
+    {
+      "id": 1,
+      "customer_roi": [[50, 420], [420, 420], [420, 700], [50, 700]],
+      "staff_roi": [[50, 230], [420, 230], [420, 400], [50, 400]]
+    },
+    {
+      "id": 2,
+      "customer_roi": [[460, 420], [830, 420], [830, 700], [460, 700]],
+      "staff_roi": [[460, 230], [830, 230], [830, 400], [460, 400]]
+    }
+  ]
+}
